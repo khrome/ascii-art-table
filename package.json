@@ -1,0 +1,12 @@
+{
+  "name": "ascii-art-table",
+  "version": "0.0.1",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "ascii-art-ansi": "0.0.3"
+  }
+}
