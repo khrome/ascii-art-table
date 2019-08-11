@@ -47,8 +47,10 @@ Map through an ansi string one character at a time, without any of those charact
 
 | Param | Type | Description |
 | --- | --- | --- |
-| ansiString | <code>string</code> | input string to map across |
-| handler | <code>function</code> | the function to map through the string |
+| options | <code>object</code> | input string to map across |
+| options.data | <code>Array of Arrays</code> | data to display |
+| options.columns | <code>Array of Objects</code> | column configurations |
+| options.bars | <code>String</code> | type: `single`, `double`, `block`, `angles` |
 
 **Example**
 
