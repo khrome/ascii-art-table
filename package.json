@@ -1,6 +1,6 @@
 {
   "name": "ascii-art-table",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.0",

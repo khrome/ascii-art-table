@@ -257,7 +257,7 @@
 
     AsciiArt.Table.create = function(options, callback){
         if(!callback){
-            return AsciiArt.Table.newReturnContext();
+            return AsciiArt.Table.newReturnContext(options);
         }else{
             var opts = {};
             [
