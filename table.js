@@ -284,9 +284,19 @@
     }
 
     AsciiArt.Table.prototype.write = function(width){
+        var ob = this;
+        if(Array.isArray(ob.data[0])){
+            //convert to object
+            ob.data = ob.data.map(function(arr){
+                var result = {};
+                ob.headers.forEach(function(header, index){
+                    result[header.value] = arr[index];
+                });
+                return result;
+            })
+        }
         var stats = columnStatistics(this.headers, this.data, this.options.includeHeader);
         var sizes = columnSizes(width, stats, this);
-        var ob = this;
         //RENDER!!!
         var result = '';
         var y = true;
